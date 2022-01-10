@@ -55,22 +55,26 @@ struct CaloriesView: View {
                 ZStack{
                     
                     Rectangle()
-                        .frame(width:400, height: 200)
+                        .frame(width:350, height: 250)
                         .foregroundColor(.white)
                         .cornerRadius(20)
                     
                     VStack{
                         
-                        Text("世界衛生組織建議以身體質量指數")
+                        Text("熱量概念")
                             .scaleEffect(1.2)
                         Spacer()
                             .frame(width: 1, height:20)
+                        VStack(alignment:.leading,spacing:7){
+                            
                         Text("世上萬物的運作都需要能量")
-                        Text("我們身體的四肢能動、心臟能跳")
-                        Text("大腦能思考、能生長發育、能繁衍後代")
-                        Text("沒有能量是不行的")
+                        Text("我們身體的四肢能動、心臟")
+                        Text("能跳、大腦能思考、能生長")
+                        Text("發育、能繁衍後代沒有能量")
+                        Text("是不行的")
+                        }
                     }
-                    .scaleEffect(1.1)
+                    .scaleEffect(1.2)
                     .foregroundColor(.black)
                 }
             }
@@ -84,7 +88,7 @@ struct CaloriesView: View {
                 ZStack{
                     
                     Rectangle()
-                        .frame(width:400, height: 350)
+                        .frame(width:350, height: 370)
                         .foregroundColor(.white)
                         .cornerRadius(20)
                     
@@ -94,12 +98,17 @@ struct CaloriesView: View {
                             .scaleEffect(1.2)
                         Spacer()
                             .frame(width: 1, height:20)
-                        Text(" 在營養學上，最主要的熱量單位是大卡")
-                        Text("（千卡，kcal）；一公克的醣類與蛋白質")
-                        Text("能提供4大卡的熱量，脂肪為9大卡")
-                        Text("酒精也有熱量，每克的酒精則能提供")
-                        Text("7大卡熱量；至於營養素中的維生素")
-                        Text("、礦物質、纖維和水則不會提供我們身體熱量")
+                        VStack(alignment:.leading,spacing:7){
+                            Text("在營養學上 ，最主要的熱量")
+                            Text("單位是大卡 ( 千卡，kcal ) ，")
+                            Text("一公克的醣類與蛋白質能提")
+                            Text("供4大卡的熱量，脂肪為9大")
+                            Text("卡，酒精也有熱量，每克的")
+                            Text("酒精則能提供7大卡熱量，至")
+                            Text("於營養素中的維生素、礦物")
+                            Text("質、纖維和水則不會提供我們")
+                            Text("身體熱量")
+                        }
                     }
                     .scaleEffect(1.1)
                     .foregroundColor(.black)
@@ -107,6 +116,9 @@ struct CaloriesView: View {
             }
             .offset(y: OnOff ? 0:800)
             .padding(.top,300)
+            Rectangle()
+                .frame(width: 450, height: 100)
+                .padding(.top,850)
         }
     }
 }

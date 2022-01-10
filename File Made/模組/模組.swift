@@ -13,7 +13,7 @@ struct View_Background :ViewModifier{
         
         content
             .ignoresSafeArea()
-            .foregroundColor(.green)
+            .foregroundColor(Color("mainColor"))
         
     }
 }
@@ -24,7 +24,7 @@ struct Rectangle_Tittle:ViewModifier{
         
         content
             .frame(width: 500, height: 60)
-            .foregroundColor(.gray)
+            .foregroundColor(Color("Gray"))
     }
 }
 

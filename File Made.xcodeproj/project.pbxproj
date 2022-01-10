@@ -16,6 +16,7 @@
 		6A09E44C277846C400C1D06A /* CaloriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A09E44B277846C400C1D06A /* CaloriesView.swift */; };
 		6A09E44E27784C8A00C1D06A /* Lose Weight View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A09E44D27784C8A00C1D06A /* Lose Weight View.swift */; };
 		6A0AE23D2774E3AD0085406A /* BMIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A0AE23C2774E3AD0085406A /* BMIView.swift */; };
+		6A25AA8A278BFB1C00A0AB58 /* GenderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A25AA89278BFB1C00A0AB58 /* GenderView.swift */; };
 		6AF556442774872F00AA4D4E /* BMR Boy View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AF556432774872F00AA4D4E /* BMR Boy View.swift */; };
 		6AF556462774876600AA4D4E /* BMR Girl View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AF556452774876600AA4D4E /* BMR Girl View.swift */; };
 		6AF5564C27748B6400AA4D4E /* BMR計算公式.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AF5564B27748B6400AA4D4E /* BMR計算公式.swift */; };
@@ -33,6 +34,7 @@
 		6A09E44B277846C400C1D06A /* CaloriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaloriesView.swift; sourceTree = "<group>"; };
 		6A09E44D27784C8A00C1D06A /* Lose Weight View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Lose Weight View.swift"; sourceTree = "<group>"; };
 		6A0AE23C2774E3AD0085406A /* BMIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMIView.swift; sourceTree = "<group>"; };
+		6A25AA89278BFB1C00A0AB58 /* GenderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderView.swift; sourceTree = "<group>"; };
 		6AF556432774872F00AA4D4E /* BMR Boy View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BMR Boy View.swift"; sourceTree = "<group>"; };
 		6AF556452774876600AA4D4E /* BMR Girl View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BMR Girl View.swift"; sourceTree = "<group>"; };
 		6AF5564B27748B6400AA4D4E /* BMR計算公式.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BMR計算公式.swift"; sourceTree = "<group>"; };
@@ -53,6 +55,7 @@
 		6A02A64B2758FCC5009B4E01 = {
 			isa = PBXGroup;
 			children = (
+				6A25AA89278BFB1C00A0AB58 /* GenderView.swift */,
 				6A02A6562758FCC5009B4E01 /* File Made */,
 				6A02A6552758FCC5009B4E01 /* Products */,
 			);
@@ -191,6 +194,7 @@
 				6A09E44C277846C400C1D06A /* CaloriesView.swift in Sources */,
 				6A02A66A2758FD5B009B4E01 /* 模組.swift in Sources */,
 				6AF556462774876600AA4D4E /* BMR Girl View.swift in Sources */,
+				6A25AA8A278BFB1C00A0AB58 /* GenderView.swift in Sources */,
 				6AFE40752779DBCC0068DE96 /* TDEE View.swift in Sources */,
 				6AF556442774872F00AA4D4E /* BMR Boy View.swift in Sources */,
 				6A0AE23D2774E3AD0085406A /* BMIView.swift in Sources */,

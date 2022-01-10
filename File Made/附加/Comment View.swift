@@ -33,7 +33,7 @@ struct Comment_View: View {
             ZStack{
                 
                 Rectangle()
-                    .frame(width:400, height: 350)
+                    .frame(width:420, height: 350)
                     .foregroundColor(.white)
                     .cornerRadius(20)
                 
@@ -51,8 +51,13 @@ struct Comment_View: View {
                     Text("高：每週運動6到7天（高強度")
                         .offset(x:-8)
                 }
-                .scaleEffect(1.4)
+                .scaleEffect(1.55)
             }
+            .scaleEffect(0.85)
+            
+            Rectangle()
+                .frame(width: 450, height: 100)
+                .padding(.top,850)
         }
     }
 }

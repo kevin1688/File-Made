@@ -37,17 +37,19 @@ struct TDEE_View: View {
             }
             .padding(.bottom,700)
             
-            Text("\(anser)")
+            Text("\(String(format: "%.2f",anser))")
                 .font(.system(size: 24, weight: .black, design: .rounded))
                 .frame(width: 200, height: 50, alignment: .center)
-                .background(Color.orange)
+                .background(Color("Green1"))
                 .foregroundColor(.white)
+                .cornerRadius(10)
                 .scaleEffect(1.5)
                 .padding(.bottom,470)
             
             Text("完成")
                 .frame(width: 200, height: 50, alignment: .center)
-                .background(Color.orange)
+                .background(Color.white)
+                .cornerRadius(10)
                 .scaleEffect(1.5)
                 .padding(.bottom,270)
                 .onTapGesture {
@@ -56,7 +58,6 @@ struct TDEE_View: View {
                 }
             
             HStack{
-                
                 Text("輸入您的BMR:")
                     .modifier(Small_Tittle())
                 
@@ -68,12 +69,17 @@ struct TDEE_View: View {
                     Rectangle()
                         .modifier(TextField_Mod())
                         .foregroundColor(.white)
-                    
+                    ZStack{
+                        Rectangle()
+                            .frame(width: 130, height:50 )
+                            .foregroundColor(.white)
+                            .cornerRadius(10)
                     TextField("輸入您的BMR", text: $keyNumberString)
                         .font(.system(size: 24, weight: .heavy, design: .rounded))
                         .frame(width: 120, height: 50, alignment: .center)
                         .keyboardType(.numberPad)
                         .foregroundColor(.black)
+                      }
                     
                 }
             }
@@ -120,25 +126,29 @@ struct TDEE_View: View {
                     
                     ZStack{
                          
-                        KeyNumberA(setNumber: 1.2, keyNumber: $pointNumber, keyNumberSting: $keyNumberString_temp,color: .blue)
+                        KeyNumberA(setNumber: 1.2, keyNumber: $pointNumber, keyNumberSting: $keyNumberString_temp,color: Color("Green3"))
+                            .cornerRadius(10)
                     }
                     
                     ZStack{
                         
-                        KeyNumberC(setNumber: 1.55, keyNumber: $pointNumber, keyNumberSting: $keyNumberString_temp,color: .blue)
-                        
+                        KeyNumberC(setNumber: 1.55, keyNumber: $pointNumber, keyNumberSting: $keyNumberString_temp,color: Color("Green3"))
+                            .cornerRadius(10)
                     }
                 }
                 
                 VStack{
                     ZStack{
                         
-                        KeyNumberB(setNumber: 1.375, keyNumber: $pointNumber, keyNumberSting: $keyNumberString_temp,color: .blue)
+                        KeyNumberB(setNumber: 1.375, keyNumber: $pointNumber, keyNumberSting: $keyNumberString_temp,color: Color("Green3"))
+                            .cornerRadius(10)
                     }
                     
                     ZStack{
                         
-                        KeyNumberD(setNumber:1.725, keyNumber: $pointNumber, keyNumberSting: $keyNumberString_temp,color: .blue)}
+                        KeyNumberD(setNumber:1.725, keyNumber: $pointNumber, keyNumberSting: $keyNumberString_temp,color: Color("Green3"))
+                            .cornerRadius(10)
+                    }
                 }
             }
             .scaleEffect(1.4)
@@ -184,7 +194,7 @@ struct KeyNumberA: View {
 
 struct KeyNumberB: View {
     
-    @State var setNumber = 0.0
+    @State var setNumber = 0.09
     
     @Binding var keyNumber:Double
     

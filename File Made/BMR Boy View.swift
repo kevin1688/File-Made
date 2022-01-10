@@ -55,14 +55,30 @@ struct BMR_Boy_View: View {
                 
                 VStack(spacing:50){
                     
+                    ZStack{
+                        Rectangle()
+                            .frame(width: 130, height:50 )
+                            .foregroundColor(.white)
+                            .cornerRadius(10)
                     TextField("請輸入體重", text: $weight)
                         .modifier(TextField_Mod())
-                    
+                    }
+                    ZStack{
+                        Rectangle()
+                            .frame(width: 130, height:50 )
+                            .foregroundColor(.white)
+                            .cornerRadius(10)
                     TextField("請輸入體重", text: $height)
                         .modifier(TextField_Mod())
-                    
+                    }
+                    ZStack{
+                        Rectangle()
+                            .frame(width: 130, height:50 )
+                            .foregroundColor(.white)
+                            .cornerRadius(10)
                     TextField("請輸入體重", text:  $age)
                         .modifier(TextField_Mod())
+                    }
                 }
             }
             .scaleEffect(1.2)
@@ -83,6 +99,7 @@ struct BMR_Boy_View: View {
                     .frame(width: 300, height: 50)
                     .background(Color(.white))
                     .foregroundColor(.white)
+                    .cornerRadius(10)
                 
             Text("完成")
                 .scaleEffect(1.4)
@@ -102,6 +119,7 @@ struct BMR_Boy_View: View {
                     .frame(width: 300, height: 50)
                     .background(Color(.white))
                     .foregroundColor(.white)
+                    .cornerRadius(10)
                 
             Text("您的BMR值:\(Int(anser))")
                 .scaleEffect(1.4)

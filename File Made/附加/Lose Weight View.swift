@@ -82,6 +82,7 @@ struct Lose_Weight_View: View {
                         .cornerRadius(20)
                     
                     Text("減肥藥")
+                        .scaleEffect(1.5)
                         .foregroundColor(.black)
                 }
             }
@@ -95,49 +96,55 @@ struct Lose_Weight_View: View {
                 ZStack{
                     
                     Rectangle()
-                        .frame(width:350, height: 700)
+                        .frame(width:350, height: 640)
                         .foregroundColor(.white)
                         .cornerRadius(20)
                     
                     VStack{
                         
-                        VStack{
+                        VStack(alignment:.leading,spacing:7){
                             
-                            Text("抗性澱粉（resistant starch, RS")
-                            Text("被定義為人體上消化道（胃和小腸）")
-                            Text("不能消化吸收的澱粉組分")
-                            Text("(Asp, Bjorck et al. 1987)")
-                            Text("簡單說，它雖然在化學結構上")
-                            Text("是貨真價實的澱粉，但不能")
-                            Text("被人體分解成葡萄糖，然後")
-                            Text("被吸收到血液當中，作為")
-                            Text("人體的能量來源用掉")
+                            Text("抗性澱粉（resistant starch")
+                            Text(",RS被定義為人體上消化道")
+                            Text("（胃和小腸）不能消化吸收")
+                            Text("的澱粉組分(Asp, Bjorck et ")
+                            Text("al. 1987)簡單說，它雖然在")
+                            Text("化學結構上是貨真價實的澱")
+                            Text("粉，但不能被人體分解成葡")
+                            Text("萄糖，然後被吸收到血液當")
+                            Text("中，作為人體的能量來源")
                             
                         }
+                        .scaleEffect(1.2)
                         .foregroundColor(.black)
                         
                         Spacer()
-                            .frame(width: 1, height:100)
+                            .frame(width: 1, height:70)
                         
-                        VStack{
+                        VStack(alignment:.leading,spacing:7){
                             
-                            Text("當然，小腸沒有消化它，它就會")
-                            Text("比較完整地進入大腸，然後大腸菌群中")
-                            Text("那些喜歡澱粉的品種會非常歡迎它")
-                            Text("並因為「食物充足」而繁榮起來")
-                            Text("成為優勢比較強的菌群。這些菌所產生")
-                            Text("的丁酸等短鏈脂肪酸，對人體維持健康的")
-                            Text("腸道環境，預防高血脂和腸癌等")
-                            Text("都是有益的")
+                            Text("當然，小腸沒有消化它它就會")
+                            Text("比較完整地進入大腸，然後大")
+                            Text("腸菌群中那些喜歡澱粉的品種")
+                            Text("會非常歡迎它並因為「食物充")
+                            Text("足」而繁榮起來，成為優勢比")
+                            Text("較大的菌群，這些菌所產的丁")
+                            Text("酸等短鏈脂肪酸，對人體維持")
+                            Text("健康的腸道環境，預防高血脂")
+                            Text("和腸癌等都是有益的")
                             
                         }
+                        .scaleEffect(1.2)
                         .foregroundColor(.black)
                     }
                 }
             }
-            .padding(.top,120)
+            .padding(.top,70)
             .offset(y: OnOff ? 0:800)
             
+            Rectangle()
+                .frame(width: 450, height: 100)
+                .padding(.top,850)
         }
     }
 }
